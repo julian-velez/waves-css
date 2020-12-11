@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding:0;
+}
+section{
+    position:relative;
+    width:100%;
+    height:100vh;
+    background:linear-gradient(180deg, #0081ff, #ff137d), url(img/girl.png);
+    background-blend-mode: screen;
+    background-size:cover;
+}
+section .wave{
+    position: absolute;
+    width:100%;
+    height:143px;
+    background:url(img/wave.png);
+    bottom:0;
+    left:0;
+    animation:animate 10s linear infinite;
+    -webkit-animation:animate 10s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position:0;
+    }
+    100%
+    {
+        background-position:1366px;
+    }
+}
+#main{
+    padding:50px 100px;
+    text-align:justify;
+}
